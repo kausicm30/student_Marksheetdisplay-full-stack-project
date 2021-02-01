@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/public/css/AdminRegister.css">
+    <script src="/public/js/AdminRegister.js"></script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="sub-container1">
+            <form name="myform" action="/validateadminregisterform" method="POST">
+                <center>
+                    <img src="https://www.yourpromoholiday.com/wp-content/uploads/2018/03/Admin-resized-2.jpg" alt="admin" width="250px" height="100px">
+                    <br>
+                    <br>
+                    <input class="input1" type="textbox" name="name" placeholder="Name" autocomplete="on">
+                    <br>
+                    <span id="name-error"></span>
+                    <br>
+                    <input class="input1" type="text" name="email" placeholder="Email" autocomplete="off">
+                    <br>
+                    <span id="email-error"></span>
+                    <br>
+                    <input class="input1" type="password" name="password" placeholder="Password" autocomplete="off">
+                    <br>
+                    <span id="p1-error"></span>
+                    <br>
+                    <input class="input1" type="password" name="repassword" placeholder="Confirm Password" autocomplete="off">
+                    <br>
+                    <span id="p2-error"></span>
+                    <br>
+                    <button class="submit1" type="submit" onclick="return validateform()">Register</button>
+                    <br>
+                    <br>
+                    <b>Already Registered then! -  </b><a href='/adminlogin'><u><i>Login</i></u></a>
+                    <br>
+                    </center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

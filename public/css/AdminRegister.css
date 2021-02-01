@@ -1,0 +1,87 @@
+.flex-container{
+    display:flex;
+    justify-content: center;
+    padding-top:100px ;
+}
+body{
+    background-image:url(https://wallpaperaccess.com/full/649378.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-container1{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: white;
+    border: 0px solid black;
+    border-radius: 40px;
+    background-color:rgb(0,0,0,0.8);
+}
+img{
+    border-radius: 10px;
+}
+.input1{
+    border: 3px solid ;
+    width: 200px;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+.input1:focus{
+    width: 220px;
+    border-bottom: 3px solid blue;
+    outline: none;
+    color:greenyellow;
+}
+.submit1{
+    background:blue;
+    opacity: 0.8;
+    outline: none;
+    border-radius: 50px;
+    border:none;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+}
+span{
+    visibility:hidden;
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color:red;
+    font-weight: 800;
+}
+input::placeholder{
+    color: white;
+}
+button:hover{
+    background-color:greenyellow;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:black;
+}
+a{
+    color: blue;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+a:hover{
+    color:chartreuse;
+    font-size: large;
+}

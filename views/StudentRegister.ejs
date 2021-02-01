@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/public/css/StudentRegister.css">
+    <script src="/public/js/StudentRegister.js"></script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="sub-container1">
+            <form name="myform" action="/validatestudentregisterform" method="POST">
+                <center>
+                    <img src="https://isobm2016congress.com/wp-content/uploads/2016/01/community-student-icon.png" alt="img" width="250px" height="150px">
+                <h2 style="position: relative; bottom: 20px;color: red;">STUDENT REGISTER</h2>
+                <input class="input1" type="text" name="name" placeholder="Name" autocomplete="off" >
+                <br>
+                <span id="name-error"></span>
+                <br>
+                <input class="input1" type="text" name="rollno" placeholder="Roll Number" autocomplete="off" >
+                <br>
+                <span id="rollno-error"></span>
+                <br>
+                <input class="input1" type="text" name="email" placeholder="Email" autocomplete="off">
+                <br>
+                <span id="email-error"></span>
+                <br>
+                <input class="input1" type="password" name="password" placeholder="Password" autocomplete="off">
+                <br>
+                <span id="p1-error"></span>
+                <br>
+                <input class="input1" type="password" name="repassword" placeholder="Confirm Password" autocomplete="off">
+                <br>
+                <span id="p2-error"></span>
+                <br>
+                <b class="input2">Gender:</b>
+                <input class="input2" id="1" type="radio" name="gender" value ="male"><b class="input2">Male</b>
+                <input class="input2" id="2" type="radio" name="gender" value ="female"><b class="input2">Female</b>
+                <input class="input2" id="3" type="radio" name="gender" value ="others"><b class="input2">Others</b>
+                <br>
+                <span id="g-error"></span>
+                <br>
+                    <button class="submit1" type="submit" onclick="return validateform()">Register</button>
+                    <br>
+                <br>
+                <b>Already Registered then! - </b><a href='/studentlogin'><u><i>Login</i></u></a>
+                <br>
+                <br>
+                </center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

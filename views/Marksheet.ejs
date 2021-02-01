@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="/public/css/Marksheet.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <center><h2>STUDENT MARK_DETAILS</h2></center>
+            <table>
+                <tr>
+                    <th rowspan="2">S.No</th>
+                    <th rowspan="2">Rollno</th>
+                    <th rowspan="2">Name</th>
+                    <th rowspan="2">Email</th>
+                    <th rowspan="2">Date of Exam</th>
+                    <th colspan="5">Subject Marks</th>
+                </tr>
+                <tr>
+                    <th>Sub-1</th>
+                    <th>Sub-2</th>
+                    <th>Sub-3</th>
+                    <th>Sub-4</th>
+                    <th>Average Mark</th>
+                </tr>
+                <% if(data.length != 0){%>
+                <%var i =1;%>
+                <%data.forEach((row)=>{%>
+                <tr>
+                    <td><%=i%></td>
+                    <td><%=row.rollno%></td>
+                    <td><%=row.name%></td>
+                    <td><%=row.mailid%></td>
+                    <% var x = row.dateofexam.getDate()+"-"+row.dateofexam.getMonth()+1+"-"+row.dateofexam.getFullYear() %>
+                    <td><%=x%></td>
+                    <td><%=row.sub1%></td>
+                    <td><%=row.sub2%></td>
+                    <td><%=row.sub3%></td>
+                    <td><%=row.sub4%></td>
+                    <td><%=Math.round((row.sub1+row.sub2+row.sub3+row.sub4)/4) %></td>
+                </tr>
+                <%i++; });%>
+                <% } else {%>
+                    <tr>
+                        <td colspan="10" class="c">No data Found</td>
+                    </tr>
+                    <%}%>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

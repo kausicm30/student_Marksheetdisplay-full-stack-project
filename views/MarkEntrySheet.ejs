@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkEntrysheet</title>
+    <link rel="stylesheet" href="/public/css/MarkEntrySheet.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sub-container">
+        <h2><u>MARK-ENTRY-SHEET</u></h2>
+        <form action="/validatemarkentryform" method="POST">
+            <fieldset style="background-color: rgb(252, 4, 4,0.7);">
+                <legend class="legend1"><u>STUDENT INFORMATION</u></legend>
+                Name : <input type="text" name="name" autocomplete="off" required>
+                Rollno : <input type="text" name="rollno" autocomplete="off" required>
+                <br><br>
+                <center>Date of Exam : <input type="date" name="date1" style="width: 180px;" autocomplete="off" required></center>
+            </fieldset>
+
+            <br><br>
+            
+            <fieldset style="background-color: rgb(2, 129, 2,0.8);">
+                <legend class="legend1"><u>SUBJECT MARKS</u></legend>
+                Sub-1 : <input type="number" name="sub1" min="1" max="100" required> Out of 100
+                <br><br>
+                Sub-2 : <input type="number" name="sub2" min ="1" max="100" required> Out of 100
+                <br><br>
+                Sub-3 : <input type="number" min ="1" name="sub3" max="100" required> Out of 100
+                <br><br>
+                Sub-4 : <input type="number" name="sub4" min ="1" max="100" required> Out of 100
+                <br><br>
+            </fieldset>
+            <br>
+            <center>
+                <div class="btn-group">
+                    <button type="reset" class="btn1"> Reset</button>
+                    <button type="submit" class="btn2">Submit</button>
+                </div>
+            </center>
+        </form>
+    </div>
+</div>
+</body>
+</html>
